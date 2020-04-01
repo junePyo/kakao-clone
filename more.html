@@ -1,135 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" 
-    href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" 
-    integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv"
-     crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>More | Kakao Clone</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="status-bar">
-        <div class="status-bar__column"> <!--left column of the status bar, shows time-->
-            <span class="status-bar__clock">13:54</span>
-        </div>
-        <div class="status-bar__column"> <!--right column of the status bar, shows icons-->
-            <i class="fas fa-clock"></i>
-            <i class="fas fa-volume-mute"></i>
-            <i class="fas fa-wifi"></i>
-            <i class="fas fa-battery-full"></i>
-            <span class="status-bar__battery-level">100%</span>
-        </div>
-    </div>    
+      <div class="status-bar__column">
+        <!--left column of the status bar, shows time-->
+        <span class="status-bar__clock">13:54</span>
+      </div>
+      <div class="status-bar__column">
+        <!--right column of the status bar, shows icons-->
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-battery-full"></i>
+        <span class="status-bar__battery-level">100%</span>
+      </div>
+    </div>
     <header class="header">
-        <div class="header__header-column">
-            <h1 class="header__title">More</h1>
-        </div>
-        <div class="header__header-column">
-            <span class="header__icon">
-                <i class="fas fa-search"></i>
-            </span>
-            <span class="header__icon">
-                <i class="far fa-comment"></i>
-            </span>
-            <span class="header__icon">
-                <a href="settings.html">
-                    <i class="fas fa-cog"></i>
-                </a>
-            </span>
-        </div>
+      <div class="header__header-column">
+        <h1 class="header__title">More</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="far fa-comment"></i>
+        </span>
+        <span class="header__icon">
+          <a href="settings.html">
+            <i class="fas fa-cog"></i>
+          </a>
+        </span>
+      </div>
     </header>
     <main class="more">
-        <header class="more__header">
-            <div class="more__friend friend">
-                <div class="friend__column">
-                    <img class="friend__avatar g-avatar" src="images/June.jpg">
-                    <div class="friend__content">
-                        <span class="friend__name">
-                            June Pyo Suh
-                        </span>
-                        <span class="friend__status">
-                            junepyo.suh@gmail.com
-                        </span>
-                    </div>
-                </div>
-                <div class="friend__column"> <!--display profile music-->
-                    <i class="far fa-comment-alt fa-2x"></i>
-                </div>
+      <header class="more__header">
+        <div class="more__friend friend">
+          <div class="friend__column">
+            <img class="friend__avatar g-avatar" src="images/June.jpg" />
+            <div class="friend__content">
+              <span class="friend__name">
+                June Pyo Suh
+              </span>
+              <span class="friend__status">
+                junepyo.suh@gmail.com
+              </span>
             </div>
-            <ul class="more__btn-list">
-                <li class="more__btn">
-                    <span class="more__btn-icon">
-                        <i class="far fa-smile fa-2x"></i>
-                    </span>
-                    <span class="more__btn-title">
-                        Emoticons
-                    </span>
-                </li>
-                <li class="more__btn">
-                    <span class="more__btn-icon">
-                        <i class="fas fa-brush fa-2x"></i>
-                    </span>
-                    <span class="more__btn-title">
-                        Themes
-                    </span>
-                </li>
-                <li class="more__btn">
-                    <span class="more__btn-icon">
-                        <i class="fab fa-kickstarter-k fa-2x"></i>
-                    </span>
-                    <span class="more__btn-title">
-                        Account
-                    </span>
-                </li>
-            </ul>
-        </header>
-        <section class="more__suggestions">
-            <h5 class="more__title">Suggestions</h5>
-            <ul class="more__suggestions-list">
-                <li class="more__suggestions sugestion">
-                    <i class="fas fa-quote-right fa-2x"></i>
-                    <span class="suggestion__title">
-                        Kakao Story
-                    </span>                    
-                </li>
-                <li class="more__suggestions sugestion">
-                    <i class="fas fa-beer fa-2x"></i>
-                    <span class="suggestion__title">
-                        Kakao friends
-                    </span>                    
-                </li>
-                <li class="more__suggestions sugestion">
-                    <i class="fas fa-gamepad fa-2x"></i>
-                    <span class="suggestion__title">
-                        Friends Gem
-                    </span>                    
-                </li>
-            </ul>
-        </section>
-    </main>
-    <nav class="nav"> <!--buttons at the bottom of the kakao chats page-->
-        <ul class="nav__list">
-            <li class="nav__list-item">
-                <a href="friends.html" class="nav__list-link">
-                <i class="far fa-user"></i></a>
-            </li>
-            <li class="nav__list-item">
-                <a href="index.html" class="nav__list-link">
-                <i class="far fa-comment"></i></a>
-            </li>
-            <li class="nav__list-item">
-                <a href="find.html" class="nav__list-link">
-                <i class="fas fa-search"></i></a>
-            </li>
-            <li class="nav__list-item">
-                <a href="more.html" class="nav__list-link">
-                <i class="fas fa-ellipsis-h"></i></a>
-            </li>
+          </div>
+          <div class="friend__column">
+            <!--display profile music-->
+            <i class="far fa-comment-alt fa-2x"></i>
+          </div>
+        </div>
+        <ul class="more__btn-list">
+          <li class="more__btn">
+            <span class="more__btn-icon">
+              <i class="far fa-smile fa-2x"></i>
+            </span>
+            <span class="more__btn-title">
+              Emoticons
+            </span>
+          </li>
+          <li class="more__btn">
+            <span class="more__btn-icon">
+              <i class="fas fa-brush fa-2x"></i>
+            </span>
+            <span class="more__btn-title">
+              Themes
+            </span>
+          </li>
+          <li class="more__btn">
+            <span class="more__btn-icon">
+              <i class="fab fa-kickstarter-k fa-2x"></i>
+            </span>
+            <span class="more__btn-title">
+              Account
+            </span>
+          </li>
         </ul>
+      </header>
+      <section class="more__suggestions">
+        <h5 class="more__title">Suggestions</h5>
+        <ul class="more__suggestions-list">
+          <li class="more__suggestions sugestion">
+            <i class="fas fa-quote-right fa-2x"></i>
+            <span class="suggestion__title">
+              Kakao Story
+            </span>
+          </li>
+          <li class="more__suggestions sugestion">
+            <i class="fas fa-beer fa-2x"></i>
+            <span class="suggestion__title">
+              Kakao friends
+            </span>
+          </li>
+          <li class="more__suggestions sugestion">
+            <i class="fas fa-gamepad fa-2x"></i>
+            <span class="suggestion__title">
+              Friends Gem
+            </span>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <nav class="nav">
+      <!--buttons at the bottom of the kakao chats page-->
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="friends.html" class="nav__list-link">
+            <i class="far fa-user"></i
+          ></a>
+        </li>
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <i class="far fa-comment"></i
+          ></a>
+        </li>
+        <li class="nav__list-item">
+          <a href="find.html" class="nav__list-link">
+            <i class="fas fa-search"></i
+          ></a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i
+          ></a>
+        </li>
+      </ul>
     </nav>
-
-</body>
+  </body>
 </html>
