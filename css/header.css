@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header .header__title {
+  /* including both .parent .child class names just to be more specific */
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.header .header__icon {
+  font-size: 21px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.header .header__header-column {
+  /* so that header__back-btn will be flexed as well;
+    the button's parent class is not header, but header__header-column */
+  display: flex;
+  align-items: center;
+}
+
+.header .header__back-btn {
+  font-size: 22px;
+  margin-right: 20px;
+}
