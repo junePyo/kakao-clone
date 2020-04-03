@@ -48,18 +48,24 @@
       <ul class="chats__list">
         <li class="chats__chat chat">
           <a href="chat.html">
-            <!--decided to replace class name from "chats__x" to "chat__column" b/c it gets too long-->
-            <div class="chat__column">
-              <!--class name "g-avatar" stands for global avatar feature
-                        that will be used in all pages-->
-              <img class="chat__avatar g-avatar" src="images/Jason.jpg" />
-              <div class="chat__content">
-                <span class="chat__username">Jason</span>
-                <span class="chat__preview">Sup bruh</span>
+            <div class="chats__chat friend">
+              <div class="friend__column">
+                <img class="friend__avatar m-avatar" src="images/Jason.jpg" />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Jason
+                  </span>
+                  <span class="friend__bottom-text">
+                    <!--status message on friends page is different from message preview on chats page-->
+                    Sup bruh
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">Yesterday</span>
+              <div class="friend__column">
+                <span class="chat__timestamp">
+                  Yesterday
+                </span>
+              </div>
             </div>
           </a>
         </li>

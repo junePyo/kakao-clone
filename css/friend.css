@@ -1,0 +1,65 @@
+/* 
+    modifies every friend section (including my own profile layout) in friends, chats, and more pages 
+    g-avatar stands for big avatar images
+    m-avatar stands for medium avatar images
+    simple friend__avatar is regular (small) avatar images
+*/
+
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friend .friend__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 38%;
+  margin-right: 15px;
+}
+
+.friend .friend__avatar.m-avatar {
+  width: 60px;
+  height: 60px;
+}
+
+.friend .friend__avatar.g-avatar {
+  /* .friend__avatar.g-avatar indciates an element with both class names.
+    The two names have to be together to specify the element with both class names.
+    If separated, it would mean g-avatar inside the friend__avatar */
+  width: 70px;
+  height: 70px;
+}
+
+.friend .friend__column {
+  display: flex;
+  align-items: center;
+  /* align-items is stretch by default: the items stretch to fill the container 
+  align-items: center prevents this stretching behavior and centers the items */
+}
+
+.friend__content .friend__name {
+  /* friend name should be on top of the friend's status message.
+    change from inline display to block display */
+  display: block;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+/* status messages in friends.html, should be smaller than the message previews in chats page */
+.friend__content .friend__status,
+.friend .chat__timestamp {
+  font-size: 12px;
+}
+
+.friend__content .friend__bottom-text {
+  /* message previews available in chats page (index.html) */
+  font-size: 14px;
+}
+
+.friend__content .friend__status,
+.friend__content .friend__bottom-text,
+.friend .chat__timestamp {
+  /* adding opacity to the features */
+  opacity: 0.6;
+}

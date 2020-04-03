@@ -3,6 +3,7 @@
 @import "status-bar.css";
 @import "header.css";
 @import "nav-bar.css";
+@import "friend.css";
 
 * {
   box-sizing: border-box;
@@ -24,7 +25,9 @@ main {
 }
 
 a {
-  color: inherit;
   /* make the color of the links to be black instead of being purple. 
     This command gets the color from the father, which is a "header__header-column" div */
+  color: inherit;
+  /* remove underlines from links (friend bottom-text) */
+  text-decoration: none;
 }
