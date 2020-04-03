@@ -1,0 +1,19 @@
+.nav {
+  position: fixed; /* whenever using position fixed, make sure to provide width */
+  width: 100%;
+  background-color: #fcfcfc;
+  padding: 20px 50px; /* top & bottom 20, left & right 30 */
+  left: 0px;
+  bottom: 0px;
+  border-top: 1px solid #f7f7f7;
+}
+
+.nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* make the size of the navigation bar icons to be in same size as the header icons */
+.nav i {
+  font-size: 20px;
+}
