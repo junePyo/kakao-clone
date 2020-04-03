@@ -17,3 +17,26 @@
 .nav i {
   font-size: 20px;
 }
+
+/* in order to properly position the badge using "absolute" feature, the position of the father class (nav__list-link)
+should be declared as relative, so that the badge won't be positioned in relation to the body */
+.nav .nav__list-link {
+  position: relative;
+}
+
+.nav .nav__badge {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  font-size: 10px;
+  color: white;
+  background-color: #dc5d46;
+  width: 18px;
+  height: 18px;
+  /* to justify and align the badge */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* the formula to making a circle: border-radius should be half of the width */
+  border-radius: 50%;
+}
