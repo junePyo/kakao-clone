@@ -2,7 +2,7 @@
   position: fixed; /* whenever using position fixed, make sure to provide width */
   width: 100%;
   background-color: #fcfcfc;
-  padding: 20px 50px; /* top & bottom 20, left & right 30 */
+  padding: 20px 50px; /* top & bottom 20, left & right 50 */
   left: 0px;
   bottom: 0px;
   border-top: 1px solid #f7f7f7;
