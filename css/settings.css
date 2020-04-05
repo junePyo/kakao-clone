@@ -1,0 +1,31 @@
+.settings .settings__sections {
+  border-top: 1px solid #f7f7f7;
+  padding-top: 30px;
+}
+
+.settings__sections .settings__setting {
+  margin-bottom: 30px;
+}
+
+.settings__sections.settings__setting:last-child {
+  /* getting rid of the bottom margin of the last element of settings__sections,
+  so that a following section won't get distanced too much */
+  margin-bottom: 0;
+}
+
+.settings__setting .settings__icon {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.settings__setting .settings__icon-themes {
+  /* customized settings of theme icon b/c of different icon size */
+  font-size: 20px;
+  margin-right: 21px;
+  padding-left: 2px;
+}
+
+.settings__setting .settings__title {
+  font-size: 22px;
+  font-weight: 300;
+}
