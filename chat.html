@@ -45,27 +45,27 @@
         </span>
       </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
         <!--Two types of messages: sent message and received message-->
         <span class="chat__timestamp">Sunday, February 23, 2020</span>
         <li class="incoming-message message">
           <img src="images/Jason.jpg" class="message__avatar g-avatar" />
-          <div class="message__content">
+          <div class="message__content content-incoming">
             <span class="message__author">Jason</span>
-            <div class="message__bubble">
+            <span class="message__bubble">
               Congrats man!
-            </div>
+            </span>
           </div>
           <span class="message__timestamp"></span>
         </li>
-        <li class="incoming-message message">
+        <li class="sent-message message">
           <!--no need to change class title?-->
           <span class="message__timestamp"></span>
-          <div class="message__content">
-            <div class="message__bubble">
+          <div class="message__content content-sent">
+            <span class="message__bubble">
               Thank you see you soon!
-            </div>
+            </span>
           </div>
         </li>
       </ul>
