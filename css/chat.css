@@ -8,11 +8,9 @@
   min-height: 100vh; /*gives the chat div a height of 100% of the height of the viewport */
 }
 
-.chat__write {
+.chat__write-container {
   position: fixed;
-  bottom: 20px;
-  width: 80%;
-
+  bottom: 0px;
   /* centering a fixed container */
   margin: 0 auto;
   left: 0;
@@ -21,11 +19,69 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f7f7f7;
-  padding: 0px 20px;
+}
+
+.chat__icon-left {
+  position: absolute;
+  left: 10px;
+}
+
+.chat__icon-right {
+  position: absolute;
+  right: 10px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-60px);
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  50% {
+    transform: translateY(-70px);
+    box-shadow: 0 30px 60px -60px rgba(50, 50, 93, 0.25),
+      0 18px 36px -10px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  100% {
+    transform: translateY(-60px);
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+}
+
+.chat__write {
+  margin: 0 auto;
+  bottom: 0px;
+  width: 100%;
+  border-radius: 0;
+  padding: 10px 30px;
+  border: none;
+  font-size: 14px;
+  background-color: white;
+  transition: width 0.5s ease-in-out, border-radius 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+}
+
+.chat__write:focus {
+  outline: none;
+  width: 80%;
+  transform: translateY(-60px);
   border-radius: 40px;
-  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  box-shadow: 0 30px 60px -30px rgba(50, 50, 935, 0.25),
+    0 18px 36px -11px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  animation: float 3s linear infinite forwards;
+}
+
+.chat__write:focus ~ .chat__icon {
+  opacity: 0;
+}
+
+.chat__icon {
+  font-size: 18px;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .chat__write i {
@@ -43,10 +99,6 @@
   font-size: 14px;
   /* scale the size of the input box to 100% size of the parent div container */
   width: 100%;
-}
-
-.chat__write-column input:focus {
-  outline: none;
 }
 
 .chat-screen .chat__messages {
@@ -130,4 +182,35 @@
   background-color: rgb(243, 243, 51);
   /* if you want to use gradient color 
   background-image: linear-gradient(#00c6ff, #0072ff); */
+}
+
+@keyframes incomingAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.incoming-message {
+  animation: incomingAnimation 0.7s ease-out forwards;
+}
+
+@keyframes sentAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(70px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.sent-message {
+  animation: sentAnimation 0.5s ease-out forwards;
+  /* forwards means the element will retain the values at the end of the animation */
 }
