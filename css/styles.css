@@ -9,6 +9,7 @@
 @import "more.css";
 @import "settings.css";
 @import "chat.css";
+@import "mobile.css";
 
 * {
   box-sizing: border-box;
@@ -35,4 +36,17 @@ a {
   color: inherit;
   /* remove underlines from links (friend bottom-text) */
   text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  to {
+    transform: none;
+  }
+}
+main {
+  animation: fadeIn 0.5s ease-in-out;
 }
